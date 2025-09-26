@@ -196,10 +196,16 @@
                               <span><i class="fa-light fa-calendar-days"></i> 26 September, 2025</span>
                               
                            </div>
-                           <h3 class="tj-post__title entry-title">Process</h3>
+                           <h2 class="tj-post__title entry-title">Process</h2>
 
                             <!-- Audience -->
-                            <h4 id="audience">Audience</h4>
+                            <h2 id="audience">1. Audience</h2>
+                            
+                            <div style="text-align:center; margin-bottom:20px;">
+                            <img src="assets/img/services/audience.jpg" 
+                                alt="Data Visualisation Banner" 
+                                style="max-width:100%; height:auto; border-radius:20px;" />
+                            </div>
 
                                 <h5>Introduction</h5>
                                 <p>
@@ -244,6 +250,257 @@
                                 to move beyond static reporting into dynamic exploration. The aim is to create confidence in 
                                 decision-making and a sense of control over complex data.
                                 </p>
+
+                                <h2 id="data-elements">2. Data Elements</h2>
+                                <div style="text-align:center; margin-bottom:20px;">
+                            <img src="assets/img/services/Data.jpg" 
+                                alt="Data Visualisation Banner" 
+                                style="max-width:100%; height:auto; border-radius:20px;" />
+                            </div>    
+                                <p>
+                                    The dataset (<a href="https://docs.google.com/spreadsheets/d/1Ep4wb9WklNXeUsDENdCrcyXebbdq3RNzuAidahwj9lg/edit?usp=sharing" target="_blank"><em>T22025A3.xlsx</em></a>) contains 220 transactions capturing details of customers,
+                                    products, financials, and transactions. Each field was reviewed, classified, and its role
+                                    in analysis identified as shown below:
+                                    </p>
+
+                                    <table class="dark-table" >
+                                    <thead>
+                                        <tr>
+                                        <th>Field Name</th>
+                                        <th>Description</th>
+                                        <th>Data Type</th>
+                                        <th>Role in Analysis</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td>TransactionID</td>
+                                        <td>Unique identifier for each transaction</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Used to count distinct orders; not visualised directly</td>
+                                        </tr>
+                                        <tr>
+                                        <td>OrderDate</td>
+                                        <td>Date of purchase</td>
+                                        <td>Date/Time</td>
+                                        <td>Supports time series analysis and trend identification</td>
+                                        </tr>
+                                        <tr>
+                                        <td>CustomerState</td>
+                                        <td>State or territory of the customer</td>
+                                        <td>Categorical (Geographic)</td>
+                                        <td>Mapped to Australian states for regional performance analysis</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Store</td>
+                                        <td>Bookstore branch</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Location-level segmentation; supports comparison of outlets</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Channel</td>
+                                        <td>Online or In-Store purchase</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Channel comparison in bar charts and trend lines</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Membership</td>
+                                        <td>Customer loyalty status</td>
+                                        <td>Categorical (Binary)</td>
+                                        <td>Segmentation of member vs non-member spending behaviour</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Category</td>
+                                        <td>Book type (e.g., Fiction, Textbook)</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Category-level performance in bar/treemap charts</td>
+                                        </tr>
+                                        <tr>
+                                        <td>Format</td>
+                                        <td>Book format (Hardcover, Paperback, eBook)</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Optional segmentation; filter for deeper analysis</td>
+                                        </tr>
+                                        <tr>
+                                        <td>GrossSales</td>
+                                        <td>Total sales before discounts</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Base measure; informs discount and revenue calculations</td>
+                                        </tr>
+                                        <tr>
+                                        <td>DiscountAmount / DiscountRate</td>
+                                        <td>Discount value and percentage</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Analysed in scatterplot to test impact on profitability</td>
+                                        </tr>
+                                        <tr>
+                                        <td>ShippingFee / GiftWrapFee</td>
+                                        <td>Additional charges applied</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Contribute to overall customer spend; included in Net Sales</td>
+                                        </tr>
+                                        <tr>
+                                        <td>NetSalesAfterReturns</td>
+                                        <td>Revenue after discounts and returns</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Core measure for KPIs and all major charts</td>
+                                        </tr>
+                                        <tr>
+                                        <td>COGS</td>
+                                        <td>Cost of Goods Sold</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Used with Net Sales to calculate Gross Margin</td>
+                                        </tr>
+                                        <tr>
+                                        <td>GrossMargin / GrossMarginAfterReturns</td>
+                                        <td>Profit before/after returns</td>
+                                        <td>Numeric (Continuous)</td>
+                                        <td>Supports profitability analysis; used in KPI and charts</td>
+                                        </tr>
+                                        <tr>
+                                        <td>ReturnQty / ReturnAmount</td>
+                                        <td>Quantity and value of returns</td>
+                                        <td>Numeric (Discrete/Continuous)</td>
+                                        <td>Feeds into Return Rate KPI; supports quality insights</td>
+                                        </tr>
+                                        <tr>
+                                        <td>PaymentMethod</td>
+                                        <td>Method used (Cash, Card, Digital)</td>
+                                        <td>Categorical (Nominal)</td>
+                                        <td>Optional segmentation; can reveal channel preferences</td>
+                                        </tr>
+                                    </tbody>
+                                    </table>
+
+                                    <h5>Calculated Fields</h5>
+                                        <table class="dark-table" >
+                                        <thead>
+                                            <tr>
+                                            <th>Field Name</th>
+                                            <th>Formula</th>
+                                            <th>Purpose</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                            <td>Profit Margin %</td>
+                                            <td>GrossMarginAfterReturns ÷ NetSalesAfterReturns</td>
+                                            <td>Measures profitability as a percentage of sales after returns</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Return Rate %</td>
+                                            <td>ReturnQty ÷ Quantity</td>
+                                            <td>Shows percentage of products returned relative to sold quantity</td>
+                                            </tr>
+                                        </tbody>
+                                        </table>
+                                        <h5>Classification Summary</h5>
+                                            <p><strong>Categorical fields:</strong> TransactionID, Store, Channel, Membership, CustomerState, CustomerSegment, Category, Format, PaymentMethod.</p>
+                                            <p><strong>Numerical fields:</strong> GrossSales, NetSalesAfterReturns, GrossMarginAfterReturns, COGS, DiscountAmount, DiscountRate, ShippingFee, GiftWrapFee, ReturnQty, ReturnAmount.</p>
+                                            <p><strong>Date fields:</strong> OrderDate.</p>
+                                            <p><strong>Geographic fields:</strong> CustomerState (mapped to Australian states).</p>
+
+                                            <h5>Conclusion</h5>
+                                            <p>
+                                            By classifying fields, it becomes clear which lend themselves to aggregation, segmentation, and 
+                                            trend analysis, ensuring accurate and meaningful visualisation.
+                                            </p>
+
+                                        <!-- The Right Fit -->
+                                            <h2 id="right-fit">3. The Right Fit</h2>
+                                            <div style="text-align:center; margin-bottom:20px;">
+                                                <img src="assets/img/services/fit.jpg" 
+                                                    alt="Data Visualisation Banner" 
+                                                    style="max-width:100%; height:auto; border-radius:20px;" />
+                                                </div> 
+
+                                            <h5>Introduction</h5>
+                                            <p>
+                                            Visualisations must be carefully selected to ensure they effectively communicate insights aligned 
+                                            with the needs of the Regional Sales Manager. This section justifies the chart types chosen for the dashboard.
+                                            </p>
+
+                                            <h5>KPI Tiles</h5>
+                                            <p><strong>Measures:</strong> Net Sales, Profit, Profit Margin %, Return Rate %.<br>
+                                            <strong>Purpose:</strong> Provide an immediate, high-level view of organisational health.</p>
+
+                                            <h5>Geographic Map</h5>
+                                            <p><strong>Measure:</strong> Net Sales by State.<br>
+                                            <strong>Why:</strong> Maps are intuitive for highlighting regional strengths and weaknesses.</p>
+
+                                            <h5>Category Analysis</h5>
+                                            <p><strong>Measure:</strong> Net Sales and Margin by Category.<br>
+                                            <strong>Why:</strong> Bar charts and treemaps clearly compare categories, helping managers prioritise high-margin book types.</p>
+
+                                            <h5>Channel Comparison</h5>
+                                            <p><strong>Measure:</strong> Online vs In-Store performance.<br>
+                                            <strong>Why:</strong> Side-by-side bar charts highlight relative contributions and profitability of channels.</p>
+
+                                            <h5>Promotions Impact</h5>
+                                            <p><strong>Measure:</strong> Discount % vs Profit Margin %.<br>
+                                            <strong>Why:</strong> Scatterplots reveal whether discounts improve or erode profitability.</p>
+
+                                            <h5>Trend Analysis</h5>
+                                            <p><strong>Measure:</strong> Monthly Sales Trends.<br>
+                                            <strong>Why:</strong> Line charts communicate seasonality, spikes, and long-term growth or decline.</p>
+
+                                            <h5>Conclusion</h5>
+                                            <p>
+                                            Each visualisation type was chosen not only for clarity but for its ability to answer a specific 
+                                            managerial question, ensuring alignment between persona needs and dashboard design.
+                                            </p>
+
+                                            <!-- Ethics -->
+                                            <h2 id="ethics">4. Ethics</h2>
+                                            <div style="text-align:center; margin-bottom:20px;">
+                                                <img src="assets/img/services/ethics.jpg" 
+                                                    alt="Data Visualisation Banner" 
+                                                    style="max-width:100%; height:auto; border-radius:20px;" />
+                                                </div> 
+
+                                            <h5>Introduction</h5>
+                                            <p>
+                                            Data visualisation is not only a technical task but also an ethical responsibility. Insights can 
+                                            influence significant business decisions, so accuracy, fairness, and transparency must be prioritised.
+                                            </p>
+
+                                            <h5>Privacy</h5>
+                                            <p>
+                                            The dataset does not include personally identifiable information. Nevertheless, careful handling ensures 
+                                            no individual customer can be traced or profiled unfairly.
+                                            </p>
+
+                                            <h5>Bias and Representation</h5>
+                                            <p>
+                                            Care was taken to avoid emphasising certain categories, regions, or channels disproportionately. 
+                                            All data points were treated with equal importance to prevent skewed interpretations.
+                                            </p>
+
+                                            <h5>Transparency in Data Processing</h5>
+                                            <p>
+                                            Minor data cleaning steps (e.g., formatting states, correcting nulls, standardising percentages) 
+                                            were documented to ensure transparency and reproducibility.
+                                            </p>
+
+                                            <h5>Responsible Use of Insights</h5>
+                                            <p>
+                                            Promotional and pricing insights should not encourage exploitative practices. For example, targeting 
+                                            discounts should be aimed at enhancing customer value, not exploiting vulnerable segments.
+                                            </p>
+
+                                            <h5>Academic Integrity</h5>
+                                            <p>
+                                            The dashboard is produced as part of an academic assignment and is not intended for commercial deployment. 
+                                            All visualisations are original and based solely on the dataset provided.
+                                            </p>
+
+                                            <h5>Conclusion</h5>
+                                            <p>
+                                            By addressing privacy, bias, transparency, and responsible use, the dashboard maintains integrity 
+                                            and ensures it is a reliable decision-support tool.
+                                            </p>
+
+
 
                                 
       </section>

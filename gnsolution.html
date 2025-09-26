@@ -187,6 +187,10 @@
                         </div> 
 
             <h3 class="tj-post__title entry-title">GoodNews Live Dashboard</h3>
+            <p>
+            Use the filters (State, Category, Channel, Membership, Date) to explore sales, profitability, and trends.
+            Hover for tooltips; click marks to highlight related data across charts.
+            </p>
 
             <div class="tableauPlaceholder" id="viz1758839419972" style="width:100%; position: relative;">
               <noscript>
@@ -239,158 +243,86 @@
             <div class="row justify-content-center">
                <div class="col-lg-8">
                   <div class="tj-post-details__container">
-                     <article class="tj-single__post">
+                        <article class="tj-single__post">
+                         <!-- Story-Telling -->
+                            <h2 id="story">Story-Telling</h2>
+
+                            <h5>Design Overview</h5>
+                            <p>
+                            The dashboard is structured for a Regional Sales Manager: KPI tiles provide an instant health check, followed by
+                            regional, categorical, channel and temporal views. A promotions chart tests whether discounts help or harm margins.
+                            Filters persist across all views to support quick, targeted questions.
+                            </p>
+
+                            <h5>KPI Tiles</h5>
+                            <p>
+                            <strong>Net Sales, Profit, Profit Margin %, Return Rate %</strong> summarise performance at a glance. Consistent
+                            number formatting (currency/percent) supports quick scanning and comparison after filters are applied.
+                            </p>
+
+                            <h5>Regional Performance (Map)</h5>
+                            <p>
+                            A filled map of Australia encodes <strong>Net Sales</strong> by state. It quickly surfaces hotspots and gaps; labels
+                            and tooltips add Profit and Margin for context. Geographic drill focuses stakeholder attention on where to act.
+                            </p>
+
+                            <h5>Category Performance (Bars/Treemap)</h5>
+                            <p>
+                            Horizontal bars compare <strong>Net Sales</strong> and show <strong>Margin</strong> via colour, helping prioritise
+                            high-value categories. Sorting reveals leaders immediately; a <em>Format</em> filter (Paperback/Hardcover/eBook)
+                            enables a deeper cut when needed.
+                            </p>
+
+                            <h5>Channel Comparison (Side-by-Side Bars)</h5>
+                            <p>
+                            Online vs In-Store performance is displayed side-by-side to guide channel investment decisions. Margin colour
+                            highlights profitable mix shifts, while labels show exact values.
+                            </p>
+
+                            <h5>Monthly Trend (Line)</h5>
+                            <p>
+                            A monthly line chart (split by Channel) shows seasonality and the timing of spikes or dips. This supports campaign
+                            evaluation and planning for peak periods.
+                            </p>
+
+                            <h5>Promotions Impact (Scatter)</h5>
+                            <p>
+                            <strong>Discount %</strong> vs <strong>Profit Margin %</strong> with bubble size = sales tests whether higher
+                            discounts translate into profitable sales. Outliers (high discount, low margin) inform more disciplined discounting.
+                            </p>
+
+                            <h5>Colour, Hierarchy & UX</h5>
+                            <p>
+                            A limited palette (sales in blues, margin accents) and consistent encodings reduce cognitive load. Layout follows
+                            a top-down narrative: KPIs → region → category/channel → time → promotion effect. Filters are grouped and labelled
+                            clearly; tooltips use business language.
+                            </p>
+
+                            <h5>Data Preparation (Summary)</h5>
+                            <ul>
+                            <li>Verified data types (dates, numeric measures), mapped states to Australia.</li>
+                            <li>Created calculations: <em>Profit Margin % = GrossMarginAfterReturns ÷ NetSalesAfterReturns</em>;
+                                <em>Return Rate % = ReturnQty ÷ Quantity</em>.</li>
+                            <li>Standardised currency/percent formats; resolved any unknown geographies.</li>
+                            </ul>
+
+                            <h5>Limitations & Next Steps</h5>
+                            <ul>
+                            <li>Sample size and historical scope may limit generalisability.</li>
+                            <li>Returns and discounts are descriptive, not causal; experiments could confirm uplift.</li>
+                            <li>Future work: city/store drill-down, cohort analysis for members, seasonality decomposition.</li>
+                            </ul>
+
+                            <h5>Accessibility</h5>
+                            <p>
+                            Labels, tooltips, and adequate contrast improve readability. Keyboard focus is supported by the
+                            Tableau embed; alt text provided for the iframe title.
+                            </p>
+                        </div>
+                        </article>
+
                         
-
-                        <div class="tj-post__content">
-                           <div class="tj-post__meta entry-meta">
-                              <span><i class="fa-light fa-user"></i> <a href="#">By Nikhil Gupta (S225006885)</a></span>
-                              <span><i class="fa-light fa-calendar-days"></i> 26 September, 2025</span>
-                              
-                           </div>
-                           <h3 class="tj-post__title entry-title">The Role of Technology in Modern Logistics Management
-                           </h3>
-
-                           <div class="tj-post__content">
-                              <p>
-                                 Welcome to our blog, where we celebrate our achievement as an AWS SaaS Competency
-                                 Partner and share insights on
-                                 how we accomplished this significant milestone.
-                              </p>
-
-                              <p>
-                                 As businesses unlock growth opportunities in the digital age, harnessing the power of
-                                 cloud computing has become
-                                 essential. Amazon Web Services (AWS) offers the AWS SaaS Competency Partner program,
-                                 recognizing companies with
-                                 exceptional expertise in delivering Software-as-a-Service solutions on the AWS
-                                 platform.
-                              </p>
-
-                              <p>
-                                 In this blog, we will delve into the strategies, best practices, and key factors that
-                                 accelerated our business
-                                 growth and earned us the prestigious AWS SaaS Competency Partner status.
-                              </p>
-
-                              <blockquote class="wp-block-quote">
-                                 <p>
-                                    “Welcome to our blog, where we celebrate our achievement as an AWS SaaS Competency
-                                    Partner and share insights
-                                    on how we accomplished this significant milestone. As businesses unlock growth
-                                    opportunities in the digital
-                                    age, harnessing the power of cloud computing has become essential. Amazon Web
-                                    Services (AWS) offers the AWS
-                                    SaaS Competency.”
-                                 </p>
-                                 <p><cite>Silvester Scott</cite></p>
-                              </blockquote>
-
-                              <h4>The Role of Technology in Modern Logistics Management</h4>
-                              <p>
-                                 Welcome to our blog, where we celebrate our achievement as an AWS SaaS Competency
-                                 Partner and share insights on
-                                 how we accomplished this significant milestone.
-                              </p>
-
-                              <p>
-                                 As businesses unlock growth opportunities in the digital age, harnessing the power of
-                                 cloud computing has become
-                                 essential. Amazon Web Services (AWS) offers the AWS SaaS Competency Partner program,
-                                 recognizing companies with
-                                 exceptional expertise in delivering Software-as-a-Service solutions on the AWS
-                                 platform.
-                              </p>
-
-                              <p>
-                                 In this blog, we will delve into the strategies, best practices, and key factors that
-                                 accelerated our business
-                                 growth and earned us the prestigious AWS SaaS Competency Partner status.
-                              </p>
-                              <p>
-                                 Explore the transformative impact of technology on logistics management. Discuss how
-                                 technologies like IoT, AI,
-                                 and blockchain are reshaping the industry and improving efficiency.
-                              </p>
-
-                              <h6>Key Points</h6>
-                              <ul>
-                                 <li>IoT and Real-Time Tracking</li>
-                                 <li>Artificial Intelligence in Route Optimization and Predictive Analytics</li>
-                                 <li>Blockchain for Enhanced Transparency and Security</li>
-                                 <li>Warehouse Automation and Robotics</li>
-                              </ul>
-
-                              <h4>Conclusion</h4>
-                              <p>
-                                 Emphasize the long-term benefits of integrating sustainable practices into logistics
-                                 operations, both for the
-                                 planet and a company's reputation.
-                              </p>
-
-                              <p>
-                                 These outlines can be expanded into comprehensive blog posts, each providing valuable
-                                 insights and information on
-                                 the respective topics.
-                              </p>
-                           </div>
-                        </div>
-                     </article>
-
-                     
-                    
-
-                        <div class="comment-respond">
-                           <h3 class="comment-reply-title">
-                              <span class="tj-comment__title">Leave a Reply</span>
-                           </h3>
-
-                           <form action="index.html" class="tj-post-comment__form">
-                              <p class="comment-notes">
-                                 <span id="email-notes">Your email address will not be published.</span>
-                                 <span class="required-field-message">Required fields are marked <span
-                                       class="required">*</span></span>
-                              </p>
-
-                              <div class="row">
-                                 <div class="col-md-6">
-                                    <div class="form_group">
-                                       <input placeholder="Enter Name" id="author" name="author" type="text"
-                                          aria-required="true" />
-                                    </div>
-                                 </div>
-                                 <div class="col-md-6">
-                                    <div class="form_group">
-                                       <input placeholder="Enter Email" id="email" name="email" type="email"
-                                          aria-required="true" />
-                                    </div>
-                                 </div>
-                                 <div class="col-md-12">
-                                    <div class="form_group">
-                                       <input placeholder="Enter Website" id="url" name="url" type="url" />
-                                    </div>
-                                 </div>
-                              </div>
-
-                              <div class="row">
-                                 <div class="col-md-12">
-                                    <div class="form_group">
-                                       <textarea class="msg-box" placeholder="Enter Your Comments" id="comment"
-                                          name="comment" cols="45" rows="8"></textarea>
-                                    </div>
-                                 </div>
-                                 <div class="clearfix"></div>
-                              </div>
-
-                              <p class="comment-form-cookies-consent">
-                                 <input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent"
-                                    type="checkbox" value="yes" />
-                                 <label for="wp-comment-cookies-consent">Save my name, email, and website in this
-                                    browser for the next time I comment.</label>
-                              </p>
-                              <button class="tj-btn-primary submit" type="submit">Post Comment</button>
-                           </form>
-                        </div>
+                        
                      </div>
                   </div>
                </div>
